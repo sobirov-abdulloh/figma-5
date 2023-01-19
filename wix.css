@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Comforter&family=Dancing+Script&family=Estonia&family=Lobster&family=Montserrat:wght@400;500;700&family=Mukta:wght@700;800&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=The+Nautigal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+/* NAVBAR CSS-------------- */
+nav {
+  height: 70px;
+  background-color: rgb(212, 216, 228);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  position: sticky;
+  top: 0;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+  color: rgb(3, 23, 88);
+}
+.nav_left svg {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+}
+.nav_left h1 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav_right a {
+  margin-left: 10px;
+  font-size: 14px;
+  color: rgb(80, 79, 79);
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav_right .fa-bars {
+  display: none;
+}
+/* BANNER CSS-------------------------- */
+.banner {
+  background-image: url("./images/bannerNew.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  background-attachment: fixed;
+}
+.banner_left {
+  background-color: rgba(29, 29, 167, 0.6);
+  width: 40%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 80px;
+  color: white;
+}
+.banner_left h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.banner_left h2 {
+  text-transform: uppercase;
+  font-size: 42px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.banner_left h2 {
+  font-weight: 400;
+}
+.banner_left p {
+  width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+/* ----------------------- */
+.work {
+  display: grid;
+  grid-template-columns: 41% auto;
+  height: 550px;
+}
+.work_left {
+  background-color: rgb(221, 227, 243);
+  display: flex;
+  justify-content: center;
+  padding-top: 85px;
+}
+.work_right {
+  /* background-color: rosybrown; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 85px;
+}
+.work_right section:nth-child(1) {
+  margin-left: 60px;
+}
+
+.work_right section:nth-child(2) {
+  margin-right: 170px;
+}
+.work_left .yozu {
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 556px) {
+  /* NAVBAR RESPONSIVE  */
+  nav {
+    padding: 0 17px;
+  }
+  .nav_left svg {
+    height: 25px;
+    width: 25px;
+  }
+  .nav_left h1 {
+    font-size: 14px;
+  }
+  .nav_right a {
+    display: none;
+  }
+  .nav_right .fa-bars {
+    display: block;
+    font-size: 25px;
+  }
+  /* BANNER RESPONSIVE */
+  .banner_left {
+    background-color: transparent;
+    padding-left: 17px;
+  }
+  .banner_left h1,
+  h2 {
+    font-size: 28px;
+  }
+  .banner_left p {
+    font-size: 16px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 556px) and (max-width: 992px) {
+  /* NAVBAR RESPONSIVE  */
+  nav {
+    padding: 0 17px;
+  }
+  .nav_right a {
+    display: none;
+  }
+  .nav_right .fa-bars {
+    display: block;
+    font-size: 25px;
+  }
+
+  /* BANNER RESPONSIVE------- */
+  .banner_left {
+    padding-left: 17px;
+  }
+  .banner_left h1,
+  h2 {
+    font-size: 28px;
+  }
+  .banner_left p {
+    font-size: 16px;
+    width: 200px;
+  }
+}
